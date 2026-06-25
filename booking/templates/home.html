@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>om sri bairavar travels</title>
+    <link rel="stylesheet" href="{% static "css/home.css" %}">
+</head>
+<body>
+    <nav id="nav-bar">
+        <img id="logo" src="{% static 'images/logo-Photoroom.png' %}" alt="img not found" style="width: 150px">
+        <ul id="nav-menu">
+            <li><a href="{% url "home" %}">Home</a></li>
+            <li><a href="{% url "services" %}">Services</a></li>
+            <li><a href="{% url "contact" %}">Contact Us</a></li>
+            <li><a href="{% url "about us" %}">About Us</a></li>
+        </ul>
+        <a href="tel:9043972340">📞 Call now</a>
+        <img id="wapp-img" src="{% static 'images/whatsapp_logo.png' %}" alt="">
+        <a href="https://wa.me/919043972340" target="_blank">Whatsapp</a>
+    </nav>
+    <video class="bg-video" autoplay muted loop playsinline>
+        <source src="{% static 'videos/bg_video.mp4' %}" type="video/mp4">
+    </video>
+    {% block another_page %}
+    <div id="wel-cnt">
+        <h1>Your Journey, Our Responsibility</h1>
+        <h2>Safe, Comfortable & Reliable Taxi Services for Local Trips, Airport Transfers, and Outstation Travel.Available 24/7 for Your Travel Needs.</h2>
+        <p>Travel with confidence and comfort. important meeting, or planning an outstation trip, Whether you're heading to the airport, attending an Enjoy clean vehicles, affordable pricing, and dependable Sri Bairavar Travels is your trusted travel partner. service tailored to your travel needs.</p>
+        <div id="wel-ctn-btn">
+            <a href="{% url "booking" %}" class="bo-cl">Book now</a>
+            <a href="tel:9043972340" class="bo-cl">Call now</a>
+        </div>
+    </div>
+    {% endblock another_page %}
+    <div id="footer">
+        <h4>Copyrights © 2026 Om Sri Biravar Travels All rights Reserved.</h4>
+    </div>
+</body>
+</html>

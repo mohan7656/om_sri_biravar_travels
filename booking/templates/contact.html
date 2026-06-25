@@ -1,0 +1,37 @@
+{% extends "home.html" %}
+{% load static %}
+{% block another_page %}
+<head>
+    <link rel="stylesheet" href="{% static "css/contact.css" %}">
+</head>
+<body>
+    <section id="contact-cnt">
+        <h1>Contact Us</h1>
+        <h3>Get in Touch</h3>
+        <p>We're here to help with all your travel needs. Whether you need a local taxi, airport transfer, outstation trip, Tirupati package, our team is ready to assist you 24/7.Om Sri Bairavar Travels is committed to providing safe, comfortable, and reliable transportation services at affordable prices.</p>
+        <p>Get in touch with us today to book your ride, request a travel quote, or learn more about our services. We look forward to serving you and being a part of your journey. Your comfort, safety, and satisfaction are our top priorities, and we're always ready to take you wherever you need to go with confidence and care. 🚖✨</p>
+    </section>
+    <section id="grid-cont">
+        <article id="grid-items">
+            <img src="{% static "images/icons8-phone-50.png" %}" alt="">
+            <h3>Phone Number</h3>
+            <a target="blank" href="tel:9043972340">9043972340</a>
+        </article>
+        <article id="grid-items">
+            <img src="{% static "images/icons8-email-50.png" %}" alt="">
+            <h3>Mail us</h3>
+            <a target="blank" href="mailto:omsribiravartravels@gmail.com">omsribiravartravels@gmail.com</a>
+        </article>
+        <article id="grid-items">
+            <img src="{% static "images/icons8-whatsapp-50.png" %}" alt="">
+            <h3>Whatsapp Chat</h3>
+            <a target="blank" href="https://wa.me/919043972340">+91 9043972340</a>
+        </article>
+        <article id="grid-items" class="loc-cont">
+            <img src="{% static "images/icons8-location-50.png" %}" alt="">
+            <h3>Address</h3>
+            <a target="blank" href="https://maps.app.goo.gl/APSNHfATQcnKvpFx5">25/11, Lakshmi nagar 3rd street, lakshmipuram, poonamallee, chennai-600056</a>
+        </article>
+    </section>
+</body>
+{% endblock another_page %}

@@ -1,0 +1,42 @@
+{% extends "home.html" %}
+{% load static %}
+{% block another_page %}
+<head>
+    <link rel="stylesheet" href="{% static "css/about_us.css" %}">
+</head>
+<body>
+    <div id="abt-content">
+        <h1>About Us</h1>
+        <h2>Your Trusted Travel Partner.</h2>
+        <p>Welcome to Om Sri Biravar Travels, your reliable taxi service provider for safe, comfortable, and affordable travel. We are committed to delivering a smooth travel experience for individuals, families, tourists, and business travelers.</p>
+        <p>Whether you need a local city ride, airport transfer, outstation trip, Tirupati package, or temple tour, our professional driver and well-maintained vehicle ensure a pleasant journey every time.</p>
+    </div>
+    <section id="abt-sec">
+        <div class="abt-points">
+            <h4>Professional & Experienced Driver</h4>
+            <p>Experienced chauffeurs committed to safe and courteous service.</p>
+        </div>
+        <div class="abt-points">
+            <h4>Outstation Travel Services</h4>
+            <p>Enjoy safe and convenient long-distance trips at affordable rates.</p>
+        </div>
+        <div class="abt-points">
+            <h4>🚗 Clean & Comfortable Cars</h4>
+            <p>Travel in hygienic, air-conditioned, and well-maintained vehicles.</p>
+        </div>
+        <div class="abt-points">
+            <h4>Reliable Taxi services</h4>
+            <p>Comfortable and punctual local taxi servies for all your daily travel needs.</p>
+        </div>
+    </section>
+    <section id="abt-foot">
+        <div>
+            <img src="{% static 'images/abt_shld_logo.png' %}" alt="">
+        </div>
+        <div id="abt-foot-cnt">
+            <h4>Safty. Punctuality. Comfort. Your Journey, Our Priority</h4>
+            <p>We don't just take you places, we build relationships.we are committed to delivering a seamless travel experience through dependable service, professional drivers, and well-maintained vehicles.</p>
+        </div>
+    </section>
+</body>
+{% endblock another_page %}

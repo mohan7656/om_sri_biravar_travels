@@ -1,0 +1,36 @@
+{% extends "home.html" %}
+{% load static %}
+{% block another_page %}
+<head>
+    <link rel="stylesheet" href="{% static "css/services.css" %}">
+</head>
+<body>
+    <h1>Our Services</h1>
+    <section id="serv-cont" >
+        <div class="serv-box">
+            <img src="{% static "images/local_taxi.jpg" %}" alt="">
+            <h3>Local Taxi Service</h3>
+            <p>Our local taxi service is designed to make your daily travel simple and convenient. Whether you are commuting to work, attending meetings, visiting hospitals, shopping centers, railway stations, or spending time with family and friends, we provide reliable transportation at competitive rates.</p>
+            <p>We understand the importance of reaching your destination safely and on time. Our drivers are familiar with local routes and traffic conditions, helping you avoid unnecessary delays and enjoy a hassle-free journey.</p>
+        </div>
+        <div class="serv-box">
+            <img src="{% static "images/outstation_taxi.jpg" %}" alt="">
+            <h3>Outstation Trips</h3>
+            <p>Explore new destinations with confidence through our outstation taxi services. Whether you are planning a family vacation, business trip, weekend getaway, or personal travel, we offer comfortable transportation for both short and long-distance journeys.</p>
+            <p>Planning a trip outside the city? Our outstation taxi services are perfect for business travel, family vacations, weekend getaways, and long-distance journeys.</p>
+        </div>
+        <div class="serv-box">
+            <img src="{% static "images/airport_taxi.jpg" %}" alt="">
+            <h3>Airport Transfer</h3>
+            <p>Traveling to or from the airport can often be stressful, especially when dealing with luggage, traffic, and flight schedules. Our airport transfer service is designed to eliminate these worries by providing dependable transportation with timely pickups and drop-offs.</p>
+            <p>Enjoy stress-free airport transportation with our punctual pickup and drop services. We monitor flight schedules to ensure timely arrivals and departures.</p>
+        </div>
+        <div class="serv-box">
+            <img src="{% static "images/tirumala_taxi.jpg" %}" alt="">
+            <h3>Thirupathi Package Tours</h3>
+            <p>We proudly offer specialized Tirupati travel packages for devotees seeking a comfortable and peaceful pilgrimage experience. Our Tirupati packages are carefully planned to provide convenient transportation while allowing you to focus on your spiritual journey.</p>
+            <p>Visit the sacred Tirumala Temple with our specially designed Tirupati travel packages. We provide comfortable transportation for individuals, families, and groups.</p>
+        </div>
+    </section>
+</body>
+{% endblock another_page %}

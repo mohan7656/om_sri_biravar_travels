@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% load static %}
+{% block another_page %}
+<link rel="stylesheet" href="{% static "css/success.css" %}">
+<section>
+    <img src="{% static "images/B-success.png" %}" alt="">
+    <h1>🎉 Booking Submited Successfully!</h1>
+    <p>Thank you for choosing Om Sri Bairavar Travels.Your booking request has been submitted successfully. Our team will review your request and contact you shortly to confirm the trip details.</p>
+    <div id="suc-info">
+        <p>Status : <span>Pending Confirmation</span></p>
+        <p>Support : <span>+91 63858 20251</span></p>
+    </div>
+    <div id="suc-btn">
+        <a href="{% url "home" %}">Back To Home</a>
+        <a href="{% url "contact" %}">contact Us</a>
+    </div>
+</section>
+{% endblock another_page %}

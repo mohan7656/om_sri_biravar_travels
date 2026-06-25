@@ -1,0 +1,39 @@
+{% extends "home.html" %}
+{% load static %}
+{% block another_page %}
+<link rel="stylesheet" href="{% static 'css/booking.css' %}">
+    <div id="main">
+        <div id="booking_page_con">
+            <h3>Book Your Taxi in Minutes</h3>
+            <p>Safe, comfortable, and reliable taxi services for local rides, airport transfers, outstation travel, Tirupati trips, and temple tours. Fill out the form below and we'll confirm your booking shortly.</p>
+        </div>
+        <div id="booking_form">
+            <h2>Booking Form</h2>
+            <form action="{% url "booking_form" %}" method="POST">
+                {% csrf_token %}
+                <label for="">Full Name</label><br>
+                <input name="full_name" required type="text"><br>
+                <label for="">Mobile Number</label><br>
+                <input name="mobile_number" required type="tel" name="" id=""><br>
+                <label for="">Email(optional)</label><br>
+                <input name="email" required type="email" name="" id=""><br>
+                <label for="">Pickup location</label><br>
+                <input name="pickup_location" required type="text"><br>
+                <label for="">Drop location</label><br>
+                <input name="drop_location" required type="text"><br>
+                <label for="">Date</label><br>
+                <input name="pickup_date" required type="Date" name="" id=""><br>
+                <label for="">Time</label><br>
+                <input name="pickup_time" required type="time" name="" id=""><br>
+                <label for="">Passenger</label><br>
+                <select name="passenger" required name="" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <button type="submit">Book</button>
+            </form>
+        </div>
+    </div>
+{% endblock another_page %}
