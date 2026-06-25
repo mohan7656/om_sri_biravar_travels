@@ -152,7 +152,7 @@ http://127.0.0.1:8000/admin/
 
 ## 📸 Screenshots
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/11567a78-9154-4c2e-b09f-8c2b7b53788f" />
+<img width="1920" height="1000" alt="image" src="https://github.com/user-attachments/assets/11567a78-9154-4c2e-b09f-8c2b7b53788f" />
 
 
 Example:
