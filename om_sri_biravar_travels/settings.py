@@ -72,16 +72,13 @@ WSGI_APPLICATION = 'om_sri_biravar_travels.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
+import dj_database_url
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'osbt_db',
-        'USER': 'root',
-        'PASSWORD':'Dev@0610#7',
-        'HOST': 'localhost',
-        'PORT': '3306'
-    }
+    "default": dj_database_url.config(
+        default="sqlite:///db.sqlite3",
+        conn_max_age=600,
+    )
 }
 
 

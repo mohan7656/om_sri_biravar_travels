@@ -7,12 +7,9 @@ A modern taxi booking web application built with **Django**, **Python**, and **M
 ## 📌 Features
 
 - Online taxi booking form
-- Customer information collection
 - Booking confirmation page
-- Admin booking management
 - Booking status updates (Pending, Confirmed, Cancelled)
 - Responsive user interface
-- Secure Django Admin panel
 - MySQL database integration
 - Static and media file support
 
@@ -157,6 +154,7 @@ http://127.0.0.1:8000/admin/
 
 <img width="1911" height="912" alt="image" src="https://github.com/user-attachments/assets/08244a2d-6781-4e6a-a774-7b44bea9cce2" />
 <img width="1901" height="925" alt="image" src="https://github.com/user-attachments/assets/81202df0-0d4e-49e6-8061-27bfa2310c43" />
+
 
 Example:
 
