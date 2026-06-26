@@ -1,0 +1,1 @@
+web: gunicorn om_sri_biravar_travels.wsgi:application
